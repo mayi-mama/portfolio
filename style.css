@@ -161,6 +161,8 @@ body {
 
   .works-img img {
     border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 0 2px #727171;
   }
   
   .works-name {
@@ -245,6 +247,10 @@ body {
 
   .works-item{
     width: calc(100% / 3);
+  }
+
+  .works-img img{
+    box-shadow: 0 0 4px #727171;
   }
 
   .works-name {
