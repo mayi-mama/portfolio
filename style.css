@@ -151,7 +151,7 @@ body {
   }
 
   .works-item{
-    width: calc(100% / 2);
+    width: calc((100% - 20px -20px) / 2);
     text-align: center;
   }
 
@@ -246,7 +246,7 @@ body {
   }
 
   .works-item{
-    width: calc(100% / 3);
+    width: calc((100% - 40px -40px)/ 3);
   }
 
   .works-img img{
