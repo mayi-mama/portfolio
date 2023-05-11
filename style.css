@@ -175,6 +175,10 @@ body {
     font-size: 10px;
   }
 
+  /*skill*/
+
+  /*contact form*/
+
 
 @media screen and (min-width: 600px) {
     body {
@@ -261,5 +265,9 @@ body {
   .works-info {
     font-size: 13px;
   }
+  
+  /*skill*/
+  
 
+  /*contact form*/
 }
