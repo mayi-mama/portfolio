@@ -116,17 +116,12 @@ body {
   }
 
 /*メインビジュアル*/
-
 .main-visual{
     margin-bottom: 40px;
 }
-    
+
 .main-visual-img{
-    height: 90vh;
-    background-image: url(img/portfolio_sp3.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 700px;
 }
 
 /*Profile*/
@@ -176,6 +171,7 @@ body {
   }
 
   /*skill*/
+
 
   /*contact form*/
 
@@ -239,10 +235,6 @@ body {
     .main-visual{
         margin-bottom: 60px;
     }
-        
-    .main-visual-img{
-        background-image: url(img/portfolio_mv.jpg);
-    }
 
      /*works*/
   .works-list{
@@ -267,7 +259,7 @@ body {
   }
   
   /*skill*/
-  
+
 
   /*contact form*/
 }
