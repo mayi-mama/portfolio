@@ -22,24 +22,27 @@
 <body>
   <div class="wrapper">
     <!-- header -->
-    <header class="header">
+    <header class="header" id="js-background">
       <div class="header-inner">
         <h1 class="header-logo">
           <a href=".">My portfolio</a>
         </h1>
-        <nav class="header-nav">
-          <ul class="header-nav-list">
-            <li class="header-nav-item">
-              <a href="#profile">Profile</a>
+        <button type="button" id="js-hamburger" class="hamburger__btn">
+            <span class="hamburger__line hamburger__input" id="input"></span>
+        </button>
+        <nav class="gnav" id="js-nav">
+          <ul class="gnav__list">
+            <li class="gnav__item">
+              <a class="gnav__link" href="#profile">Profile</a>
             </li>
-            <li class="header-nav-item">
-              <a href="#works">Works</a>
+            <li class="gnav__item">
+              <a class="gnav__link" href="#works">Works</a>
             </li>
-            <li class="header-nav-item">
-              <a href="#skill">Skill</a>
+            <li class="gnav__item">
+              <a class="gnav__link" href="#skill">Skill</a>
             </li>
-            <li class="header-nav-item">
-              <a href="#contact">Contact</a>
+            <li class="gnav__item">
+              <a class="gnav__link" href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
@@ -65,7 +68,9 @@
           </div>
           <p class="profile-title">Mai Muronoi</p>
           <p class="profile-text">
-            30代前半のWebデザイナーです。<br>
+            東京都在住。30代の一児のママ。<br>
+            都内でホームページ制作を行っております。<br>
+            丁寧なコミュニケーションを大事にしており、お客様の理想とするホームページ制作を目指してまいります。
           </p>
         </div>
       </section>
@@ -77,7 +82,7 @@
              <h2 class="title-area__title">Works</h2>
              <span class="title-area__subtitle">実績</span>
           </div>
-          <ul class="works-list">
+          <ul class="works-list" id="js-fadeIn">
             <li class="works-item" href="works-template.html">
               <a class="works-img">
                 <img src="img/works-dummy-thumb.jpg" alt="">
@@ -132,10 +137,10 @@
               <h2 class="title-area__title">Skill</h2>
               <span class="title-area__subtitle">スキル</span>
           </div>
-          <ul class="skill-list">
+          <ul class="skill-list" id="js-fadeIn">
             <li class="skill-item">
               <div class="skill-img">
-                <img src="img/icon_skill.png" alt="">
+                <img src="img/portfolio-html.jpg" alt="ポートフォリオのスキルHTML,CSS">
               </div>
               <div class="skill-body">
                 <h3 class="skill-name">HTML5/CSS3</h3>
@@ -146,7 +151,7 @@
             </li>
             <li class="skill-item">
               <div class="skill-img">
-                <img src="img/icon_skill.png" alt="">
+                <img src="img/portfolio-js.jpg" alt="ポートフォリオのスキルJavascript">
               </div>
               <div class="skill-body">
                 <h3 class="skill-name">JavaScript</h3>
@@ -157,7 +162,7 @@
             </li>
             <li class="skill-item">
               <div class="skill-img">
-                <img src="img/icon_skill.png" alt="">
+                <img src="img/portfolio-ps2.jpg" alt="ポートフォリオのスキルphotoshop">
               </div>
               <div class="skill-body">
                 <h3 class="skill-name">Photoshop</h3>
@@ -168,10 +173,20 @@
             </li>
             <li class="skill-item">
               <div class="skill-img">
-                <img src="img/icon_skill.png" alt="">
+                <img src="img/portfolio-xd2.jpg" alt="ポートフォリオのスキルAdobe Xd">
               </div>
               <div class="skill-body">
                 <h3 class="skill-name">XD</h3>
+                <p class="skill-text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+              </div>
+            </li>
+            <li class="skill-item">
+              <div class="skill-img">
+                <img src="img/portfolio-figma.jpg" alt="ポートフォリオのスキルFigma">
+              </div>
+              <div class="skill-body">
+                <h3 class="skill-name">Figma</h3>
                 <p class="skill-text">
                   テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
               </div>
@@ -189,22 +204,22 @@
               <span class="title-area__subtitle">お問い合わせ</span>
           </div>
           <div class="contact__form">
-              <form class="form">
+              <form class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScuSYPtql2rzTNgWTGxZpXYEubSEa4fNFjoFaAc237uYA0BJw/formResponse">
                   <div class="form__item">
                       <label for="name" class="form__title">お名前</label>
-                      <input type="text" id="name" name="name" required class="form__input" placeholder="山田太郎">
+                      <input type="text" id="name" name="entry.558076412" required class="form__input" placeholder="山田太郎">
                   </div>
                   <div class="form__item">
                     <label for="tel" class="form__title">電話番号</label>
-                    <input type="text" id="tel" name="tel" required class="form__input" placeholder="0120-1111-2222">
+                    <input type="text" id="tel" name="entry.1895178280" required class="form__input" placeholder="0120-1111-2222">
                   </div>
                   <div class="form__item">
                       <label for="email" class="form__title">E-mail</label>
-                      <input type="text" id="email" name="email" required class="form__input" placeholder="abcdefg@abcdefg.com">
+                      <input type="text" id="email" name="entry.1150473128" required class="form__input" placeholder="exapmle@mail.co.jp">
                   </div>
                   <div class="form__item">
                       <label for="comment" class="form__title2">メッセージ</label>
-                      <textarea id="comment" nama="comment" placeholder="ご自由にお書きください" class="form__textArea"></textarea>
+                      <textarea id="comment" nama="entry.1464787281" placeholder="ご自由にお書きください" class="form__textArea"></textarea>
                   </div>
                   <div class="form__btn">
                       <button type="submit" class="btn">送信ボタンを押す</button>
@@ -214,7 +229,7 @@
         </div>
       </section>
       <!-- pagetop -->
-      <div class="page-top" id="js-page-top">
+      <div class="page-top" id="js-page">
         <div class="page-top__link">
             <span class="material-icons-outlined page-top__icon">expand_less</span>
         </div>
