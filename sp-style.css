@@ -253,15 +253,15 @@ transform: translateY(0px);
 
 .skill-item{
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
 }
 
 .skill-img{
-  width:100%;
-  height: auto;
-  margin-right: 15px;
+  width: 100%;
+  height:auto;
+  margin-right: 20px;
 }
 
 .skill-img img{

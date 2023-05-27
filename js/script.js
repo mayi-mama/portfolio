@@ -12,7 +12,7 @@ function scroll_event(){
     if(window.pageYOffset < 200){
         page.style.opacity = '0';
     }else if(window.pageYOffset > 200){
-        page.style.opacity = '1'
+        page.style.opacity = '1';
     };
 };
 
